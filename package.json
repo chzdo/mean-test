@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@angular/cli": "^13.0.4",
+    "@angular/compiler-cli": "^13.0.3",
     "concurrently": "^6.4.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -14,6 +16,6 @@
     "client": "cd client && ng build",
     "start": "node index.js",
     "start-dev": "concurrently \"npm run client\" \"nodemon index.js\"",
-    "heroku-postbuild": " cd client && ng build --prod"
+    "heroku-postbuild": "   ng build --prod"
   }
 }
