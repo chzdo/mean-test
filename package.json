@@ -12,6 +12,8 @@
   },
   "scripts": {
     "client": "cd client && ng build",
-    "start": "concurrently \"npm run client\" \"nodemon index.js\""
+    "start": "node index.js",
+    "start-dev": "concurrently \"npm run client\" \"nodemon index.js\"",
+    "heroku-postbuild": " cd client && ng build --prod"
   }
 }
